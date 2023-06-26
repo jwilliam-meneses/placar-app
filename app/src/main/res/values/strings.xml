@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Placar</string>
+    <string name="button_start">Iniciar</string>
+    <string name="button_matches">Partidas</string>
 </resources>
