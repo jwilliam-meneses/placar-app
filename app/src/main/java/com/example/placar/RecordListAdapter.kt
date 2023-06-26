@@ -16,12 +16,10 @@ class RecordListAdapter (
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         fun vincula(record: Record) {
-            val date_time = itemView.findViewById<TextView>(R.id.match_date_time)
-            date_time.text = record.dateTime
-            val name = itemView.findViewById<TextView>(R.id.match_name)
-            name.text = record.name
-            val result = itemView.findViewById<TextView>(R.id.match_result)
-            result.text = record.result
+            val dateTime = itemView.findViewById<TextView>(R.id.match_date_time)
+            dateTime.text = record.dateTime
+            val matchName = itemView.findViewById<TextView>(R.id.match_name)
+            matchName.text = record.matchName
         }
     }
 
