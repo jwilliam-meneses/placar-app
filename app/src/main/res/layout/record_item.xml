@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="25/06 23:21" />
+        tools:text="Data/Hora: 25/06 23:21" />
 
     <TextView
         android:id="@+id/match_name"
@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/match_date_time"
-        tools:text="Amistoso" />
+        tools:text="Nome da Partida: Amistoso" />
 
     <TextView
         android:id="@+id/match_result"
@@ -39,6 +39,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/match_name"
-        tools:text="Time A 3 x 2 Time B"  />
+        tools:text="Sets: Time A 3 x 2 Time B"  />
+
+    <TextView
+        android:id="@+id/record_item_sets"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/match_result"
+        tools:text="Total de Sets: Total de Sets: 5"  />
+
+    <TextView
+        android:id="@+id/record_item_points"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/record_item_sets"
+        tools:text="Pontos por Set: 15"  />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

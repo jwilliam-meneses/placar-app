@@ -31,6 +31,7 @@ class SettingsActivity : AppCompatActivity() {
             }
 
             startActivity(intent)
+            finish()
         }
     }
 
@@ -50,7 +51,7 @@ class SettingsActivity : AppCompatActivity() {
         val pointsPerSetField = findViewById<EditText>(R.id.points_per_set)
         val pointsPerSet = pointsPerSetField.text.toString().toInt()
 
-        val sdf = SimpleDateFormat( "dd/MM/yyyy 'at' HH:mm:ss")
+        val sdf = SimpleDateFormat( "dd/MM/yyyy 'as' HH:mm")
         val currentDateTime: String = sdf.format(Date())
 
         return Record(
